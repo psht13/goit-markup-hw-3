@@ -6,6 +6,17 @@ body {
   color: #434455;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -13,10 +24,55 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ==================== /General styles ==================== */
+
 /* ==================== Page header styles ==================== */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -30,15 +86,32 @@ ol {
   color: #2e2f42;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
   font-weight: 500;
   color: #2e2f42;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .contacts {
   font-style: normal;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-contacts {
@@ -53,13 +126,16 @@ ol {
 .header-contacts:focus {
   color: #404bbf;
 }
+/* ==================== /Page header styles ==================== */
 
 /* ==================== Main content styles ==================== */
 
 /* ==================== Hero section styles ====================*/
 .hero-section {
   background: #2e2f42;
+  padding: 188px 0;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -67,6 +143,11 @@ ol {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-top: 0;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -78,15 +159,23 @@ ol {
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background: #404bbf;
 }
+/* ==================== /Hero section styles ====================*/
 
 /* ==================== Features section styles ====================*/
+.features-section {
+  padding: 120px 0;
+}
 .features-section-title {
   letter-spacing: 0.02em;
   font-weight: 700;
@@ -105,10 +194,20 @@ ol {
   color: #2e2f42;
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .features-list-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ==================== /Features section styles ====================*/
 
 /* ==================== Team section styles ====================*/
 .team-section {
@@ -141,6 +240,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ==================== /Team section styles ====================*/
 
 /* ==================== Portfolio section styles ====================*/
 .portfolio-section-title {
@@ -165,6 +265,9 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ==================== /Portfolio section styles ====================*/
+
+/* ==================== /Main content styles ==================== */
 
 /* ==================== Page footer styles ====================*/
 .footer-content {
