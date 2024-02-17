@@ -1,9 +1,9 @@
 /* ==================== General styles ==================== */
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
-  font-size: 16px;
   color: #434455;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -53,18 +53,17 @@ img {
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1158px;
   padding: 0 15px;
-  margin: 0 auto;
 }
-
 /* ==================== /General styles ==================== */
 
 /* ==================== Page header styles ==================== */
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page-header {
@@ -72,14 +71,14 @@ img {
 }
 
 .logo {
-  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-header {
@@ -97,12 +96,12 @@ img {
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
-  color: #2e2f42;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
-  display: block;
+  color: #2e2f42;
 }
 
 .contacts {
@@ -115,9 +114,9 @@ img {
 }
 
 .header-contacts {
-  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .nav-link:hover,
@@ -143,33 +142,31 @@ img {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
-  margin-top: 0;
   max-width: 496px;
+  margin: 0 auto 48px auto;
 }
 
 .hero-button {
   font-family: 'Roboto', sans-serif;
-  border-style: none;
-  line-height: 1.5;
-  background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
   color: #ffffff;
+  background: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
   display: block;
   margin: 0 auto;
-  border-radius: 4px;
-  padding: 16px 32px;
+  line-height: 1.5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
+
 /* ==================== /Hero section styles ====================*/
 
 /* ==================== Features section styles ====================*/
@@ -192,11 +189,13 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .features-list-item {
@@ -212,6 +211,13 @@ img {
 /* ==================== Team section styles ====================*/
 .team-section {
   background: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .team-section-title {
@@ -222,6 +228,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-title {
@@ -230,10 +237,22 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-list-item {
-  background: #ffffff;
+  width: calc((100% - 72px) / 4);
+  max-width: 264px;
+  border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.text-content {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 42px;
 }
 
 .team-text {
