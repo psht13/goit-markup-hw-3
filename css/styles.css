@@ -286,7 +286,8 @@ img {
 
 .portfolio-text-content {
   padding: 32px 16px;
-  border: 1px dashed #e7e9fc;
+  border: 1px solid #e7e9fc;
+  display: inline-block;
 }
 
 .project-title {
