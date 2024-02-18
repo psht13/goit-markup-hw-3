@@ -288,7 +288,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  display: inline-block;
 }
 
 .project-title {
@@ -317,6 +316,7 @@ img {
 .logotype {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .logo-footer {
